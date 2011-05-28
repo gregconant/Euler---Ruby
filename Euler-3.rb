@@ -1,4 +1,4 @@
-#Problem 3
+# Problem 3
 #02 November 2001
 
 #The prime factors of 13195 are 5, 7, 13 and 29.
