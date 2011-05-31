@@ -22,7 +22,7 @@ def sum_terms(nums, evens_only)
 end
 def fib(nums_used, max_terms, max_number, evens_only)
   result = 0
-  num_count = nums_used.count
+  num_count = nums_used.size
   if(nums_used.size == 1)
     result = nums_used.at(0)
   elsif(nums_used.size == 0)
@@ -45,7 +45,7 @@ def fib(nums_used, max_terms, max_number, evens_only)
       nums_used[0] = value2
       nums_used[1] = value1 + value2
       print nums_used[0], " ", nums_used[1]
-      new_sum = nums_used[0] + nums_used[1]
+      #new_sum = nums_used[0] + nums_used[1]
       #print "  new_sum: " << new_sum.to_s << "\n"
       if evens_only
         result = nums_used[1] % 2 == 0 ? result + nums_used[1] : result
@@ -60,7 +60,6 @@ def fib(nums_used, max_terms, max_number, evens_only)
   print "DONE: evens_only: ", evens_only, "\n"
   result
 end
-
 
 print fib [1,2], 9999999, 4000000, true
 

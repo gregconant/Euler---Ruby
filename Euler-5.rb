@@ -7,7 +7,6 @@
 
 
 def find_smallest_num_divisible_by_all(range)
-  qualifying = []
   (1..9999999999).each do |curr|
     success = true
     range.each do |divisor|
